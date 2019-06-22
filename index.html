@@ -29,7 +29,64 @@
 		@media only screen and (max-width: 768px){
 		.nav-item .nav-link{text-align:center;}
 		}
+		.navbar-brand{font-size:2rem;
+		padding:0 !important;
+		font-weight:bold;}
+		._grd-txt{
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		}
+		html {sroll-behavior: smooth;}
+		._front-page-img{
+		height:100vh;
+		background: url("img/bg.jpg") no-repeat scroll center ;
+		background-size:cover;
+		z-index:1;}
+		._front-page-img .mask1{
+		background-image:linear-gradient(#000, 75%, transparent);
+		position:absolute;
+		width:100vw;
+		height:100vh;
+		z-index:2;
+		}
+		._grd-blue{
+		background-color: #2a2a72;
+		background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);}
+		
+		._grd-orange2{
+		background-color: #0cbaba;
+		background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+		
+		}
+		._sticky-top {
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+		top: 0;
+		}
+		.hdr span{
+		font-size:3rem;
+		}
+		.initiative {
+		max-width:430px;
+		}
+		._sk-shadow-black-b{
+		box-shadow:0 0px 5px rgba(0,0,0,.3);
+		}
+		._sk-shadow-black-t{
+		text-shadow:0 0px 5px rgba(0,0,0,.5);
+		}
+		
+		
+		
 		</style>
+		
+		
+		
+		
+		
+		
+		
+		
 		<script>
 		addEventListener("load", function () {
 		setTimeout(hideURLbar, 0);
@@ -38,18 +95,19 @@
 		function hideURLbar() {
 		window.scrollTo(0, 1);
 		}
+		
 		</script>
 		
 	</head>
 	<body class="pt-5" >
 		<header>
-			<nav class="navbar navbar-expand-md navbar-dark p-0 black fixed-top">
-			<a style="height:50px;" class="ml-3 navbar-brand" href="/">
-				<img style="height:100%;" src="brand.png" >
+			<nav class="navbar navbar-expand-md navbar-dark py-0 _grd-blue fixed-top">
+			<a class="_sk-shadow-black-t ml-3 navbar-brand" href="/">
+				HTC <!--<img style="height:100%;" src="brand.png" -->
 			</a>
 			<!-- toggler button -->
-			<button class="navbar-toggler my-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler my-auto _sk-shadow-black-b _grd-blue" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class=" navbar-toggler-icon"></span>
 			</button>
 			<!--// toggler button -->
 			<!-- menu content -->
@@ -82,13 +140,18 @@
 			</div>
 			<!--// menu content -->
 			</nav>
+			<div id="mainContent" >
 		</header>
-		<main data-toggle="collapse" data-target="#navbarSupportedContent"  class="pt-4" >
-			<div class="container" >
-			
-				<p>Main Content</p>
+		<main class="pt-4" >
+			<div class="container-fluid" >
+				<div class="p-5 container border rounded _sk-shadow-black-b" >
+					<p class="text-center p-0 m-0 hdr text-uppercase  h3 _grd-txt _grd-blue" ><span class="text-red" >H</span>ome <span>T</span>uition <span>C</span>onsultancy</p>
+					<p class="_sk-shadow-black-t initiative text-center mx-auto p-0 m-0 font-small _grd-blue text-white rounded" ><span class="text-nowrap" >An Initiative By <b><i>Sujeet Jha</i></b></span></p>
+				<!--	<p class="_sk-shadow-black-t initiative text-center mx-auto p-0 m-0 font-small _grd-blue text-white rounded" ><span class="text-nowrap" >An Initiative By <b><i>Sujit Jha</i></b></span> &nbsp <span class="text-nowrap" >(9060606791, 8789471883)</span></p>-->
+				</div>
 				
-				
+				<p class="h3 mt-4 m-0 p-0 text-center purple text-white py-2 rounded mb-3" >This is dummy text</p>
+				<p class="text-justify" >
 				"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 				"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 				What is Lorem Ipsum?
@@ -106,7 +169,7 @@
 				Where can I get some?
 				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 				
-				
+				</p>
 				
 				
 				
@@ -120,7 +183,7 @@
 			</div>
 		</main>
 		<!-- Footer -->
-		<footer class="page-footer font-small teal my-3">
+		<footer class="page-footer font-small blue my-3">
 			
 			<!-- Copyright -->
 			<div class="footer-copyright text-center py-3">© <script>document.write(new Date().getFullYear())</script> Copyright:
@@ -129,7 +192,7 @@
 			<!-- Copyright -->
 			
 		</footer>
-		<div class="fixed-bottom text-light font-small special-color footer-copyright text-center ">Created by : 
+		<div class="fixed-bottom text-light font-small _grd-blue footer-copyright text-center ">Created by : 
 			<a class="text-white" href="https://facebook.com/satishkumarsharma05">Satish Kumar Sharma</a>
 		</div>
 		<!-- Footer -->
@@ -140,13 +203,22 @@
 		<script src="js/mdb.min.js" ></script>
 		<script src="js/script.js" ></script>
 		<script>
-		if ('serviceWorker' in navigator) {
+		/*if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
-		.register('sw.js')
+		.register('./service-worker.js')
 		//		.then(function () { console.log('Service Worker Registered'); });
 		.then(function () { console.log('Service Worker Registered'); });
 		}
+		*/
+		$(function (){
+		var mainContent = $("#mainContent").offset();
 		
+		mainContent.on("scroll", function (){
+		alert("dudioe")
+		})
+		
+		
+		});
 		</script>
 	</body>
 </html>
