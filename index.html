@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta property="og:image" content="https://hometutionconsultancy.github.io/favicon/android-chrome-512x512.png">
 		<meta property="og:image:url" content="https://hometutionconsultancy.github.io/favicon/android-chrome-512x512.png">
+		<!-- font-awesome CSS -->
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" >
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<!-- MBD CSS -->
@@ -75,7 +77,18 @@
 		._sk-shadow-black-t{
 		text-shadow:0 0px 5px rgba(0,0,0,.5);
 		}
-		
+		.sn a{
+		background:blu;
+		display:inline-block;
+		width:40px ;height:40px;
+		text-align:center;
+		line-height:40px;
+		border-radius:50%;
+		font-size:1.5rem;
+		color:teal;
+		border:2px solid ;
+		margin:7px;
+		}
 		
 		
 		</style>
@@ -144,11 +157,24 @@
 		</header>
 		<main class="pt-4" >
 			<div class="container-fluid" >
-				<div class="p-5 container border rounded _sk-shadow-black-b" >
+				<div class="p-4 container border rounded _sk-shadow-black-b" >
 					<p class="text-center p-0 m-0 hdr text-uppercase  h3 _grd-txt _grd-blue" ><span class="text-red" >H</span>ome <span>T</span>uition <span>C</span>onsultancy</p>
 					<p class="_sk-shadow-black-t initiative text-center mx-auto p-0 m-0 font-small _grd-blue text-white rounded" ><span class="text-nowrap" >An Initiative By <b><i>Sujeet Jha</i></b></span></p>
 				<!--	<p class="_sk-shadow-black-t initiative text-center mx-auto p-0 m-0 font-small _grd-blue text-white rounded" ><span class="text-nowrap" >An Initiative By <b><i>Sujit Jha</i></b></span> &nbsp <span class="text-nowrap" >(9060606791, 8789471883)</span></p>-->
+					<div class="sn d-flex justify-content-center" >
+						<a href="tel:9973757920" ><i class="fa fa-phone" ></i></a>
+						<a href="https://api.whatsapp.com/send?phone=919973757920" ><i class="fa fa-whatsapp" ></i></a>
+						<a href="#!" ><i class="fa fa-facebook" ></i></a>
+						<a href="#!" ><i class="fa fa-twitter" ></i></a>
+					</div>
 				</div>
+				
+				
+				
+				
+				
+				
+				
 				
 				<p class="h3 mt-4 m-0 p-0 text-center purple text-white py-2 rounded mb-3" >This is dummy text</p>
 				<p class="text-justify" >
@@ -210,15 +236,6 @@
 		.then(function () { console.log('Service Worker Registered'); });
 		}
 		*/
-		$(function (){
-		var mainContent = $("#mainContent").offset();
-		
-		mainContent.on("scroll", function (){
-		alert("dudioe")
-		})
-		
-		
-		});
 		</script>
 	</body>
 </html>
